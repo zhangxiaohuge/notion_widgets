@@ -13,7 +13,7 @@
         /*CSS RESETS*/
 
 body{
-    background-color: #000000;
+    background-color: #ffffff;
     line-height: 1.6;
 
 }
@@ -40,7 +40,7 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #553c4e;
+    background: #000000;
     width: 85vw;
     color: #fff;
     display: inline-block;
@@ -127,11 +127,11 @@ else{
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning  ';
+        greet = '早上好 小沪 ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = '下午好 小沪 ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = '晚上好 小号  ';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
