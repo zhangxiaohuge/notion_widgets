@@ -58,7 +58,7 @@
 <body>
 
 	<nav class="navMenu  border">
-		<a id="home" onclick="navigate(this.id)" href="https://www.notion.so/xiaohusay/NotionSpace-474573d440e945cd860f048f730dc43f?pvs=4"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
 		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
 		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
 		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
@@ -78,7 +78,7 @@
 
 	<script>
 
-		let direction = "horizontal";
+		let direction = "vertical";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
@@ -87,7 +87,7 @@
 		function navigate(id) {
 
 			if (id == 'home')
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/xiaohusay/NotionSpace-474573d440e945cd860f048f730dc43f?pvs=4", '_blank').focus();
 			else if (id == "inbox")
 				window.open("https://example.com", '_blank').focus();
 			else if (id == "week")
